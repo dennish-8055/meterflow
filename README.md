@@ -7,9 +7,11 @@
 
 
 
+
 📌 Introduction
 
 MeterFlow is a full-stack web application for managing API authentication, usage tracking, and API key handling. It demonstrates real-world SaaS architecture with secure JWT-based authentication and scalable backend design.
+
 
 
 
@@ -22,6 +24,7 @@ MeterFlow is a full-stack web application for managing API authentication, usage
 
 
 
+
 🏭 Industry Value
 
 * Represents real-world SaaS platforms
@@ -30,10 +33,12 @@ MeterFlow is a full-stack web application for managing API authentication, usage
 
 
 
+
 👥 Roles
 
 * User: Login, manage API keys, view usage
 * System: Handles authentication, routing, and tracking
+
 
 
 
@@ -47,19 +52,28 @@ MeterFlow is a full-stack web application for managing API authentication, usage
 
 
 
+
 ⚙️ Technologies Used
 
 React, Axios, Express, MongoDB Atlas, JWT
 
 
 
+
 📸 Functionalities
 
 * Login / Signup
+Screenshots/Screenshot 2026-05-01 174337.png
 
 * Dashboard
+Screenshots/Screenshot 2026-05-01 174444.png
+
 * API key management
+Screenshots/Screenshot 2026-05-01 174504.png
+
 * API gateway
+Screenshots/Screenshot 2026-05-01 174453.png
+
 
 
 
@@ -73,9 +87,11 @@ Frontend → API → Middleware → Verify Token → Response
 
 
 
+
 🧾 Conclusion
 
 MeterFlow demonstrates real-world full-stack development with authentication, API management, and cloud deployment.
+
 
 
 
