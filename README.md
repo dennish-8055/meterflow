@@ -63,16 +63,16 @@ React, Axios, Express, MongoDB Atlas, JWT
 📸 Functionalities
 
 * Login / Signup
-Screenshots/Screenshot 2026-05-01 174337.png
+https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174337.png
 
 * Dashboard
-Screenshots/Screenshot 2026-05-01 174444.png
+https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174444.png
 
 * API key management
-Screenshots/Screenshot 2026-05-01 174504.png
+https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174504.png
 
 * API gateway
-Screenshots/Screenshot 2026-05-01 174453.png
+https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174453.png
 
 
 
