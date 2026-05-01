@@ -1,101 +1,112 @@
-🚀 MeterFlow
+# 🚀 MeterFlow
 
-🌐 Live Demo
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black)
 
-* Frontend: https://meterflow-eight.vercel.app
-* Backend API: https://meterflow-s8aa.onrender.com
+---
 
+## 🌐 Live Demo
 
+- **Frontend:** https://meterflow-eight.vercel.app  
+- **Backend API:** https://meterflow-s8aa.onrender.com  
 
+---
 
-📌 Introduction
+## 📌 Introduction
 
-MeterFlow is a full-stack web application for managing API authentication, usage tracking, and API key handling. It demonstrates real-world SaaS architecture with secure JWT-based authentication and scalable backend design.
+MeterFlow is a full-stack SaaS-style application for managing API authentication, API keys, and usage tracking.  
+It demonstrates secure JWT authentication and scalable backend architecture.
 
+---
 
+## ✨ Features
 
+- 🔐 JWT Authentication (Login / Signup)
+- 🔑 API Key Management
+- 📊 API Usage Tracking
+- 🚀 API Gateway Routing
+- ☁️ Cloud Deployment (Vercel + Render)
 
-💡 Use Cases
+---
 
-* User authentication (login/signup)
-* API key generation
-* API usage tracking
-* API gateway routing
+## 🧠 Use Cases
 
+- User authentication systems  
+- API key generation platforms  
+- Developer tools / SaaS products  
+- API monitoring dashboards  
 
+---
 
+## 🏗 Tech Stack
 
-🏭 Industry Value
+- **Frontend:** React (Vite), Axios  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB Atlas  
+- **Auth:** JWT  
+- **Deployment:** Vercel + Render  
 
-* Represents real-world SaaS platforms
-* Demonstrates API management systems
-* Useful for developer platforms and cloud services
+---
 
+## 📸 Screenshots
 
+### 🔐 Login / Signup
+<p align="center">
+  <img src="https://github.com/dennish-8055/meterflow/raw/main/Screenshots/Screenshot%202026-05-01%20174337.png" width="700"/>
+</p>
 
+### 📊 Dashboard
+<p align="center">
+  <img src="https://github.com/dennish-8055/meterflow/raw/main/Screenshots/Screenshot%202026-05-01%20174444.png" width="700"/>
+</p>
 
-👥 Roles
+### 🔑 API Key Management
+<p align="center">
+  <img src="https://github.com/dennish-8055/meterflow/raw/main/Screenshots/Screenshot%202026-05-01%20174504.png" width="700"/>
+</p>
 
-* User: Login, manage API keys, view usage
-* System: Handles authentication, routing, and tracking
+### 🌐 API Gateway
+<p align="center">
+  <img src="https://github.com/dennish-8055/meterflow/raw/main/Screenshots/Screenshot%202026-05-01%20174453.png" width="700"/>
+</p>
 
+---
 
+## 🔄 Flow
 
+**Authentication Flow**  
+User → Login → Backend → Verify → JWT → Frontend  
 
-🧱 Tech Stack (with Reason)
+**API Flow**  
+Frontend → API → Middleware → Verify Token → Response  
 
-* Frontend: React (Vite) → Fast UI
-* Backend: Node.js + Express → REST APIs
-* Database: MongoDB → Scalable
-* Auth: JWT → Secure
-* Deployment: Vercel + Render
+---
 
+## 🎯 Industry Value
 
+- Represents real-world SaaS architecture  
+- Demonstrates API management systems  
+- Useful for developer platforms & cloud services  
 
+---
 
-⚙️ Technologies Used
+## 👤 Roles
 
-React, Axios, Express, MongoDB Atlas, JWT
+- **User:** Login, manage API keys, view usage  
+- **System:** Handles authentication, routing, tracking  
 
+---
 
+## 📌 Conclusion
 
+MeterFlow demonstrates full-stack development with authentication, API management, and cloud deployment.
 
-📸 Functionalities
+---
 
-### Login / Signup
-![Login Screenshoot](https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174337.png)
+## 👨‍💻 Author
 
-### Dashboard
-![](https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174444.png)
-
-### API key management
-![](https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174504.png)
-
-### API gateway
-![](https://github.com/dennish-8055/meterflow/blob/main/Screenshots/Screenshot%202026-05-01%20174453.png)
-
-
-
-
-🔄 Flow Charts
-
-Authentication Flow:
-User → Login → Backend → Verify → JWT → Frontend
-
-API Flow:
-Frontend → API → Middleware → Verify Token → Response
-
-
-
-
-🧾 Conclusion
-
-MeterFlow demonstrates real-world full-stack development with authentication, API management, and cloud deployment.
-
-
-
-
-🙌 Author
-
-Dennish Yadav
+**Dennish Yadav**  
 GitHub: https://github.com/dennish-8055
