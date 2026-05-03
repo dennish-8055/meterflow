@@ -23,7 +23,7 @@ router.get("/calculate", auth, async (req, res) => {
       amount,
     });
   } catch (err) {
-    console.error("Billing error:", err);
+    console.error("Billing calculate error:", err);
     res.status(500).json({ message: "Billing error" });
   }
 });
@@ -37,27 +37,41 @@ router.get("/history", auth, async (req, res) => {
 
     res.json(bills);
   } catch (err) {
+    console.error("Billing history error:", err);
     res.status(500).json({ error: err.message });
   }
 });
 
 
-// 💳 PAYMENT
+// 💳 PAYMENT (FIXED VERSION)
 router.post("/pay", auth, async (req, res) => {
   try {
-    const keys = await ApiKey.find({ userId: req.user.id });
+    const userId = req.user.id;
 
+    // ✅ get API keys
+    const keys = await ApiKey.find({ userId });
+
+    if (!keys || keys.length === 0) {
+      return res.status(400).json({ message: "No API keys found" });
+    }
+
+    // ✅ calculate total usage safely
     let totalRequests = 0;
 
     keys.forEach((k) => {
-      totalRequests += k.usageCount;
+      totalRequests += k.usageCount || 0; // prevent undefined error
     });
 
     const costPerRequest = 0.01;
     const amount = totalRequests * costPerRequest;
 
+    if (amount === 0) {
+      return res.status(400).json({ message: "No usage to bill" });
+    }
+
+    // ✅ create billing record
     const bill = await Billing.create({
-      userId: req.user.id,
+      userId,
       totalRequests,
       costPerRequest,
       amount,
@@ -67,12 +81,20 @@ router.post("/pay", auth, async (req, res) => {
       billingPeriodEnd: new Date(),
     });
 
+    // ✅ OPTIONAL: reset usage after payment
+    await ApiKey.updateMany(
+      { userId },
+      { $set: { usageCount: 0 } }
+    );
+
     res.json({
       message: "Payment successful",
       bill,
     });
+
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Payment error:", err);
+    res.status(500).json({ message: "Payment failed", error: err.message });
   }
 });
 
