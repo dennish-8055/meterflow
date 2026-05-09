@@ -110,3 +110,6 @@ MeterFlow demonstrates full-stack development with authentication, API managemen
 
 **Dennish Yadav**  
 GitHub: https://github.com/dennish-8055
+
+## 📄 License
+This project is licensed under the MIT License.
